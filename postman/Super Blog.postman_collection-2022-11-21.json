@@ -1,0 +1,415 @@
+{
+	"info": {
+		"_postman_id": "4ec8c186-8b2a-4b90-8b57-86c13b38e384",
+		"name": "Super Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11349449"
+	},
+	"item": [
+		{
+			"name": "development",
+			"item": [
+				{
+					"name": "AWS",
+					"item": [
+						{
+							"name": "Carousel Posts",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://cf12pg35y9.execute-api.us-east-2.amazonaws.com/dev/carouselPosts",
+									"protocol": "https",
+									"host": [
+										"cf12pg35y9",
+										"execute-api",
+										"us-east-2",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"carouselPosts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Posts",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://cf12pg35y9.execute-api.us-east-2.amazonaws.com/dev/posts?feedPage=1",
+									"protocol": "https",
+									"host": [
+										"cf12pg35y9",
+										"execute-api",
+										"us-east-2",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"posts"
+									],
+									"query": [
+										{
+											"key": "feedPage",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Post (Slug)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://cf12pg35y9.execute-api.us-east-2.amazonaws.com/dev/post?slug=title-of-featured-post-number-3-title-of-featured-post-number-3",
+									"protocol": "https",
+									"host": [
+										"cf12pg35y9",
+										"execute-api",
+										"us-east-2",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"post"
+									],
+									"query": [
+										{
+											"key": "slug",
+											"value": "title-of-featured-post-number-3-title-of-featured-post-number-3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Trending Posts",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://cf12pg35y9.execute-api.us-east-2.amazonaws.com/dev/trendingPosts",
+									"protocol": "https",
+									"host": [
+										"cf12pg35y9",
+										"execute-api",
+										"us-east-2",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"trendingPosts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Topics",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://cf12pg35y9.execute-api.us-east-2.amazonaws.com/dev/topics",
+									"protocol": "https",
+									"host": [
+										"cf12pg35y9",
+										"execute-api",
+										"us-east-2",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"topics"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User Profile",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://cf12pg35y9.execute-api.us-east-2.amazonaws.com/dev/userProfile?email=mauricio.o.mesquita@gmail.com",
+									"protocol": "https",
+									"host": [
+										"cf12pg35y9",
+										"execute-api",
+										"us-east-2",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"userProfile"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "mauricio.o.mesquita@gmail.com"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User Profile",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"52e0604b-e653-481b-9835-395f5483bf86\",\n    \"email\": \"mauricio.o.mesquita@gmail.com\",\n    \"firstName\": \"Mauricio1\",\n    \"language\": \"english\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://cf12pg35y9.execute-api.us-east-2.amazonaws.com/dev/userProfile",
+									"protocol": "https",
+									"host": [
+										"cf12pg35y9",
+										"execute-api",
+										"us-east-2",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"userProfile"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "HOTMART",
+					"item": [
+						{
+							"name": "HOTMART - Subscription",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer H4sIAAAAAAAAAB3QzXKCMBQF4CdqB4JoWdaANDFBQRCSjVPAQvhX0ASevraruznnmzP3OuMydTNxEPgULUj3BBpRF5gZRGtUD8kZYuv9OuOFAUvyE1rHM555vKuRkCI38JC7kUhOUvCklKjqlVcxk1bsdalGIC7zJOjT%2F1zTZPN%2FH4V64PlnHCW6tw3rAIZ68W98d8HwMgStipm6vGRhMbHq0%2BBC0w4h00nYiIMdTdQuJG2jFXWpycJt9beFATXw2NQS0NR%2FBo8dk4FIeS6daIubA3wZdqZIjCS1s4ktTGNtZLzcFV2oQp32Li4XmdqssbPRfoOR86jrx7VyoVlBs7x7Njsa9bGqHSff7Gwfr4%2BztsEwawnqb8bhcjfZae845LtN%2B2wWyxdyeJTjec9XTxPH8d2d3M1uUf6NDySasrUr8MfZCBdTdEJm%2Fmrvrz%2F2hdb21qjJH2wRtFtNmMraChUvQJIgeSmmFtRh8kyvu%2F2TMD8nKxeom1nw7ghRutRQZeapYF8B7dwSjF%2FOydp%2BTocZ9ZuKdKrEA%2Be2Ap6njz45LknR75szuOnQtqpOSr1%2Fe3pdCHPQy%2BLhANVtX19nP0AtdayNifGgcNswm9zLwtH8MUX3gEKtH98gfMrumvQ5ygmZg83nMDzn3Sx%2FAR4iZ0ljAgAA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.hotmart.com/payments/api/v1/subscriptions?subscriber_email=teste.sandbox@hotmart.com",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"hotmart",
+										"com"
+									],
+									"path": [
+										"payments",
+										"api",
+										"v1",
+										"subscriptions"
+									],
+									"query": [
+										{
+											"key": "client_id",
+											"value": "ea9ce14c-2be8-4871-b007-c64be7968331",
+											"disabled": true
+										},
+										{
+											"key": "client_secret",
+											"value": "6417838c-452b-4c34-b506-55e84a9d8a4e",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "ACTIVE",
+											"disabled": true
+										},
+										{
+											"key": "subscriber_email",
+											"value": "teste.sandbox@hotmart.com"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "HOTMART - Reactivate Subscription",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer H4sIAAAAAAAAAB3QzXKCMBQF4CdqB4JoWdaANDFBQRCSjVPAQvhX0ASevraruznnmzP3OuMydTNxEPgULUj3BBpRF5gZRGtUD8kZYuv9OuOFAUvyE1rHM555vKuRkCI38JC7kUhOUvCklKjqlVcxk1bsdalGIC7zJOjT%2F1zTZPN%2FH4V64PlnHCW6tw3rAIZ68W98d8HwMgStipm6vGRhMbHq0%2BBC0w4h00nYiIMdTdQuJG2jFXWpycJt9beFATXw2NQS0NR%2FBo8dk4FIeS6daIubA3wZdqZIjCS1s4ktTGNtZLzcFV2oQp32Li4XmdqssbPRfoOR86jrx7VyoVlBs7x7Njsa9bGqHSff7Gwfr4%2BztsEwawnqb8bhcjfZae845LtN%2B2wWyxdyeJTjec9XTxPH8d2d3M1uUf6NDySasrUr8MfZCBdTdEJm%2Fmrvrz%2F2hdb21qjJH2wRtFtNmMraChUvQJIgeSmmFtRh8kyvu%2F2TMD8nKxeom1nw7ghRutRQZeapYF8B7dwSjF%2FOydp%2BTocZ9ZuKdKrEA%2Be2Ap6njz45LknR75szuOnQtqpOSr1%2Fe3pdCHPQy%2BLhANVtX19nP0AtdayNifGgcNswm9zLwtH8MUX3gEKtH98gfMrumvQ5ygmZg83nMDzn3Sx%2FAR4iZ0ljAgAA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.hotmart.com/payments/api/v1/subscriptions/AAAAA001/reactivate",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"hotmart",
+										"com"
+									],
+									"path": [
+										"payments",
+										"api",
+										"v1",
+										"subscriptions",
+										"AAAAA001",
+										"reactivate"
+									],
+									"query": [
+										{
+											"key": "client_id",
+											"value": "ea9ce14c-2be8-4871-b007-c64be7968331",
+											"disabled": true
+										},
+										{
+											"key": "client_secret",
+											"value": "6417838c-452b-4c34-b506-55e84a9d8a4e",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "ACTIVE",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "HOTMART - Cancel Subscription",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer H4sIAAAAAAAAAB3QzXKCMBQF4CdqB4JoWdaANDFBQRCSjVPAQvhX0ASevraruznnmzP3OuMydTNxEPgULUj3BBpRF5gZRGtUD8kZYuv9OuOFAUvyE1rHM555vKuRkCI38JC7kUhOUvCklKjqlVcxk1bsdalGIC7zJOjT%2F1zTZPN%2FH4V64PlnHCW6tw3rAIZ68W98d8HwMgStipm6vGRhMbHq0%2BBC0w4h00nYiIMdTdQuJG2jFXWpycJt9beFATXw2NQS0NR%2FBo8dk4FIeS6daIubA3wZdqZIjCS1s4ktTGNtZLzcFV2oQp32Li4XmdqssbPRfoOR86jrx7VyoVlBs7x7Njsa9bGqHSff7Gwfr4%2BztsEwawnqb8bhcjfZae845LtN%2B2wWyxdyeJTjec9XTxPH8d2d3M1uUf6NDySasrUr8MfZCBdTdEJm%2Fmrvrz%2F2hdb21qjJH2wRtFtNmMraChUvQJIgeSmmFtRh8kyvu%2F2TMD8nKxeom1nw7ghRutRQZeapYF8B7dwSjF%2FOydp%2BTocZ9ZuKdKrEA%2Be2Ap6njz45LknR75szuOnQtqpOSr1%2Fe3pdCHPQy%2BLhANVtX19nP0AtdayNifGgcNswm9zLwtH8MUX3gEKtH98gfMrumvQ5ygmZg83nMDzn3Sx%2FAR4iZ0ljAgAA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"send_mail\": true}"
+								},
+								"url": {
+									"raw": "https://sandbox.hotmart.com/payments/api/v1/subscriptions/AAAAA001/cancel",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"hotmart",
+										"com"
+									],
+									"path": [
+										"payments",
+										"api",
+										"v1",
+										"subscriptions",
+										"AAAAA001",
+										"cancel"
+									],
+									"query": [
+										{
+											"key": "subscriber_code",
+											"value": "AAAAA001",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "HOTMART - GET ACCESS TOKEN",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Basic ZWE5Y2UxNGMtMmJlOC00ODcxLWIwMDctYzY0YmU3OTY4MzMxOjY0MTc4MzhjLTQ1MmItNGMzNC1iNTA2LTU1ZTg0YTlkOGE0ZQ==",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://api-sec-vlc.hotmart.com/security/oauth/token?grant_type=client_credentials&client_id=ea9ce14c-2be8-4871-b007-c64be7968331&client_secret=6417838c-452b-4c34-b506-55e84a9d8a4e",
+									"protocol": "https",
+									"host": [
+										"api-sec-vlc",
+										"hotmart",
+										"com"
+									],
+									"path": [
+										"security",
+										"oauth",
+										"token"
+									],
+									"query": [
+										{
+											"key": "grant_type",
+											"value": "client_credentials"
+										},
+										{
+											"key": "client_id",
+											"value": "ea9ce14c-2be8-4871-b007-c64be7968331"
+										},
+										{
+											"key": "client_secret",
+											"value": "6417838c-452b-4c34-b506-55e84a9d8a4e"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

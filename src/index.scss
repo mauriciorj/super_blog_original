@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:regular,bold, bolder,italic');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f4f5f6;
+  min-height: 100vh;
+  // display: flex;
+  // flex: 1;
+}
+
+// #root {
+//   display: flex;
+//   flex: 1;
+// }
+
+// :root {
+//   display: flex;
+//   flex: 1;
+//   --c_grey-l: #f4f5f6;
+//   --c_grey-m: #c9d0d8;
+//   --c_grey-d: #c1c8d1;
+
+//   --c_blue-d: #384259;
+//   --c_blue-m:  #515e7c;
+
+//   --c_green-l: #2fc4b2;
+
+//   --c_pink-m: #fc5185;
+// }
+

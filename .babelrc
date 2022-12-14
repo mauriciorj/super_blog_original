@@ -1,0 +1,7 @@
+{
+  "plugins": [
+    "@typescript-eslint/eslint-plugin",
+    "@babel/plugin-proposal-optional-chaining"
+  ],
+  "presets": ["@babel/plugin-proposal-optional-chaining"]
+}

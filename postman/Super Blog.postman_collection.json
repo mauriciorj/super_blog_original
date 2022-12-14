@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "4ec8c186-8b2a-4b90-8b57-86c13b38e384",
+		"name": "Super Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "development",
+			"item": [
+				{
+					"name": "Carousel Posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cf12pg35y9.execute-api.us-east-2.amazonaws.com/dev/carouselPosts",
+							"protocol": "https",
+							"host": [
+								"cf12pg35y9",
+								"execute-api",
+								"us-east-2",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"carouselPosts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cf12pg35y9.execute-api.us-east-2.amazonaws.com/dev/posts?feedPage=1",
+							"protocol": "https",
+							"host": [
+								"cf12pg35y9",
+								"execute-api",
+								"us-east-2",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"posts"
+							],
+							"query": [
+								{
+									"key": "feedPage",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post (Slug)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cf12pg35y9.execute-api.us-east-2.amazonaws.com/dev/post?slug=title-of-featured-post-number-3-title-of-featured-post-number-3",
+							"protocol": "https",
+							"host": [
+								"cf12pg35y9",
+								"execute-api",
+								"us-east-2",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"post"
+							],
+							"query": [
+								{
+									"key": "slug",
+									"value": "title-of-featured-post-number-3-title-of-featured-post-number-3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Trending Posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cf12pg35y9.execute-api.us-east-2.amazonaws.com/dev/trendingPosts",
+							"protocol": "https",
+							"host": [
+								"cf12pg35y9",
+								"execute-api",
+								"us-east-2",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"trendingPosts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Topics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cf12pg35y9.execute-api.us-east-2.amazonaws.com/dev/topics",
+							"protocol": "https",
+							"host": [
+								"cf12pg35y9",
+								"execute-api",
+								"us-east-2",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"topics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cf12pg35y9.execute-api.us-east-2.amazonaws.com/dev/userProfile?email=mauricio.o.mesquita@gmail.com",
+							"protocol": "https",
+							"host": [
+								"cf12pg35y9",
+								"execute-api",
+								"us-east-2",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"userProfile"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "mauricio.o.mesquita@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Profile",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"52e0604b-e653-481b-9835-395f5483bf86\",\n    \"email\": \"mauricio.o.mesquita@gmail.com\",\n    \"firstName\": \"Mauricio1\",\n    \"language\": \"english\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cf12pg35y9.execute-api.us-east-2.amazonaws.com/dev/userProfile",
+							"protocol": "https",
+							"host": [
+								"cf12pg35y9",
+								"execute-api",
+								"us-east-2",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"userProfile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

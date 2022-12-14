@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+      - apt update && apt install yarn
+      - node --version
+  pre_build:
+    commands:
+      - yarn
+  build:
+    commands:
+      - yarn build
+  post_build:
+    commands:
+      # sync the contents of /build to S3
+      - aws s3 sync ./build s3://superblogv2/ --delete
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build
